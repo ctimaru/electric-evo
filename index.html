@@ -294,23 +294,6 @@
     </div>
 </div>
 
-
-<script>
-      var map;
-      function initMap() {
-         // The location of Torino
-  var torino = {lat: 45.106000, lng: 7.703465};
-  // The map, centered at Torino
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 18, center: torino});
-  // The marker, positioned at address
-  var marker = new google.maps.Marker({position: torino, map: map});
-}
-</script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm8Ll2lOMofYg2bxLylGk8HYms7YvwB48&callback=initMap"
-    async defer></script>
-
 <footer class="footer-container white-text-container">
     <div class="container">
         <div class="row">
@@ -366,6 +349,24 @@ document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <script type="text/javascript" src="./main.faaf51f9.js"></script>
 <script data-ad-client="ca-pub-6173554393468493" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!--Google maps api-->
+<script>
+      var map;
+      function initMap() {
+         // The location of Torino
+  var torino = {lat: 45.106000, lng: 7.703465};
+  // The map, centered at Torino
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 18, center: torino});
+  // The marker, positioned at address
+  var marker = new google.maps.Marker({position: torino, map: map});
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm8Ll2lOMofYg2bxLylGk8HYms7YvwB48&callback=initMap"
+async defer></script>
+
 
 <!-- Start of Async Callbell Code -->
 <script>
